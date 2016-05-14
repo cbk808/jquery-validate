@@ -75,4 +75,5 @@ showErrors A custom message display handler, first argument is the map of errors
 <li>$.validator.addMethod <code>jQuery.validator.addMethod( name, method [, message ] )</code>, 其中method 接收两个参数，第一个为value, 第二个为被验证的元素，第三个是出错信息。可以通过$.validator.addClassRules批量为具有某个类的元素批量添加验证规则("class", {rule})</li>
 <li>addMethod验证函数的上下文是validator, validator有一个optional方法可以判断元素是否可选（必填）</li>
 <li>经过试验证明如果把validator 写在class中也有效，e.g. class="name required"</li>
-<li>Validator.form()会执行表单验证，并显示错误提示信息</li></ol>
+<li>Validator.form()会执行表单验证，并显示错误提示信息</li>
+<li>Validator.element()可以验证单个元素,这些都是validator的方法，还有一些plugin method 调用方式就不一样了，e.g. $('selector').validate(), $('selector').valid()</li></ol>
